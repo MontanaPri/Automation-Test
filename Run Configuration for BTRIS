@@ -1,0 +1,164 @@
+====>>>>Executing Commands For Running Test Locally On git-batch========>>>>>>
+
+#Run on git-bash (From Montana's Computer).
+-Run With Test Protocol For regression in Prod and test ENV:
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=Prod browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=test01 browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=report_engine_test browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+
+-Run With Non-Test Protocols:
+bundle exec cucumber -c --tags @BTRIS_Quick_Prod_Test test_env=test01 browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+
+#Run on git-bash (From Sandeep's Computer).
+-Run With Test Protocol For Regression in test ENV:
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test01 browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+-Run With Non-Test Protocols:
+bundle exec cucumber -c --tags @BTRIS_Quick_Prod_Test test_env=test01 browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Regression_TestProtocol_Report.html
+-Run quick smoke test.
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=test01 browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Regression_TestProtocol_Report.html
+
+@BTRIS_Quick_Smoke_Test
+#Run on Linux in Prod.
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=Prod browser=chrome --format progress --format html --out=/btris_automation_regression_suite/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html
+
+++++++++++Mobile and Tablet emulator run config (Run for Montana's Computer)+++++++++++++++++++++++
+
+===#Run Mobile Emulator on test using git-bash (From Montana's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=test_mobile browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Mobile_Smoke_Test_Report.html
+===#Run Mobile Emulator on Prod using git-bash (From Montana's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=prod_mobile browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Mobile_Smoke_Prod_Test_Report.html
+===#Run Tablet Emulator on test using git-bash (From Montana's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=test_tablet browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Tablet_Smoke_Test_Report.html
+===#Run Tablet Emulator on Prod using git-bash (From Montana's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=prod_tablet browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Tablet_Smoke_Test_Report.html
+
+bundle exec cucumber -c --tags  test_env=Prod browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/Prod_Test.html
+
+
+++++++++++Mobile and Tablet emulator run config (Run on Sandeep's Computer)+++++++++++++++++++++++
+
+===#Run Mobile Emulator on test using git-bash (From Sandeep's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=test_mobile browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Mobile_Smoke_Test_Report.html
+===#Run Mobile Emulator on Prod using git-bash (From Sandeep's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=prod_mobile browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Mobile_Smoke_Test_Report.html
+===#Run Tablet Emulator on test using git-bash (From Sandeep's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=test_tablet browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Tablet_Smoke_Test_Report.html
+===#Run Tablet Emulator on Prod using git-bash (From Sandeep's Computer).
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=prod_tablet browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Tablet_Smoke_Test_Report.html
+
+
+:+1: ******* Run tes Parallel *******
+bundle exec parallel_cucumber -c features/btris_general_reports_prod_protocols_features/
+====Run with tag
+bundle exec parallel_cucumber -c features/btris_general_reports_prod_protocols_features/ -o "-t @BTRIS_Quick_Prod_Test"
+
+
+
+******Run Config for Saved Reports*****************
+===Run from Montana's Machine=====
+bundle exec cucumber -c --tags @Laboratory_Reference_List_Saved_Reports,@Pathology_Reference_List_Saved_Reports,@Save_Radiology_Administration_Reports,@Save_General_Reports,@Vital_Sign_Reference_List_Saved_Reports test_env=test01 browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/Saved_Reports_Regression_Test.html
+===Run from Sandeep's Machine=====
+bundle exec cucumber -c --tags @Laboratory_Reference_List_Saved_Reports,@Pathology_Reference_List_Saved_Reports,@Save_Radiology_Administration_Reports,@Save_General_Reports,@Vital_Sign_Reference_List_Saved_Reports test_env=test01 browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/Saved_Reports_Regression_Test.html
+
+****link for Parallel Test ****
+https://shashikantjagtap.net/running-cucumber-features-in-parallel-and-aggregating-reports/
+
+
+Speed up BDD with Parallel Cucumber
+ December 30, 2013  Shashikant Jagtap
+Running Cucumber in Parallel
+First of all, if you using Cucumber as a BDD tool and having large feature set, then you are at the right place.  Now we have an awesome Ruby Gem called ‘Parallel_tests’ which is going to make our life much easier by parallelising large set of feature to run much faster. You can read more ‘Parallel_tests’ on GitHub.
+
+In this short tutorial, we will see how to use ‘Parallel_tests’ in our project and how to aggregate generated html cucumber reports.
+
+We will use source code from my GitHub repository ‘Cuke_Experiment‘. Please download source code if you have development environment ready
+
+Shell
+$ git clone https://github.com/Shashikant86/Cuke_Experiment
+$ cd Cuke_Experiment
+1
+2
+$ git clone https://github.com/Shashikant86/Cuke_Experiment
+$ cd Cuke_Experiment
+You need to have Ruby 2.0.0 for this demonstration.
+
+Using Parallel_Tests Gem
+Parallel_Tests is a Ruby Gem for running RSpec, Cucumber and Test::Unit on multiple CPUs in the parallel to speed up tests. There are many benefits using Parallel_Tests Gem into your Cucumber.
+
+It is very easy to use in your existing project or test suite
+Parallel Tests forks cucumber into number of CPUs processes and you can specify number of processes.
+Parallel Tests can generate separate reports for each process using variable ‘ENV[‘TEST_ENV_NUMBER’]’
+You don’t need to change your test options. Just keep everything inside  ‘-o “your test profiles’
+Installing Gem
+You can just run following command to install parallel_tests gem into your existing project
+
+Shell
+$ gem install parallel_tests
+1
+$ gem install parallel_tests
+OR Simply add it in your Gemfile.
+
+Shell
+$ vim Gemfile
+1
+$ vim Gemfile
+And add following line
+
+Shell
+gem "parallel_tests"
+1
+gem "parallel_tests"
+Now, you need to install bundler.
+
+Shell
+$ bundle install
+1
+$ bundle install
+That’s it. You are now ready to use parallel_tests into your project.
+
+Using Gem
+Once you have successfully installed parallel_tests Gem then you are now ready to use it. By default, it forks cucumber into 4 processes depending on number of feature files. If number of feature files are less than 8 then it usually use 2 processes.
+
+Shell
+$ bundle exec parallel_cucumber features/
+1
+$ bundle exec parallel_cucumber features/
+Now that, this command will run all your feature files within the ‘features’ directory.
+
+Running features from sub-directories
+You can run specific set of features from sub-directories by navigating to that directory.
+
+Shell
+$ bundle exec parallel_cucumber features/homepage_features/
+Running features with specific profiles or tags
+You can run parallel_tests y using specific profiles or tags using test options  ‘- o’
+
+Shell
+$ bundle exec parallel_cucumber features/ -o "-p stage -t @sanity"
+ Running features by specifying number of processes
+You can specify number of processes to speed up feature executions by using option ‘-n’
+
+Shell
+$ bundle exec parallel_cucumber features/ -n 8
+This will break down features into 8 different processes.
+
+Generating HTML Reports
+We can easily generate HTML reports for the each process and aggregate reports for each process. As we said earlier that there is a variable ENV[‘TEST_ENV_NUMBER’] which gives details about all the process that cucumber scenarios are executing.
+
+In order to generate reports for all the processes, we need to create a profile in our ‘cucumber.yml’. Let’s call this profile ‘default’ profile.
+
+Shell
+default: --format html --out report<%= ENV['TEST_ENV_NUMBER'] %>.html
+1 default: --format html --out report<%= ENV['TEST_ENV_NUMBER'] %>.html
+This will create HTML report for each process and name it as report.html, report2.html and so on.
+
+Source Code & Quick Start
+Source code available on GitHub ‘Cuke_Experiment‘ , Download it and get started. I assume, you have Ruby development environment ready(RVM, XCode, Homebrew etc etc)
+
+Shell
+$ git clone https://github.com/Shashikant86/Cuke_Experiment
+$ cd Cuke_Experiment
+$ rvm use 2.0.0
+$ bundle install
+$ bundle exec parallel_cucumber features/

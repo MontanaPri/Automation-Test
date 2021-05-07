@@ -1,0 +1,2373 @@
+[
+  {
+    "uri": "features/btris_quick_smoke_test/Reference_List.feature",
+    "id": "btris-reference-list-test-report",
+    "keyword": "Feature",
+    "name": "BTRIS Reference List Test Report",
+    "description": "",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@BTRIS_Quick_Smoke_Test",
+        "line": 1
+      },
+      {
+        "name": "@ReferenceList_Radiology_QST",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "btris-reference-list-test-report;1.1-running-reports-search-for-vital-signs-reports-criteria,-5-days.;;2",
+        "keyword": "Scenario Outline",
+        "name": "1.1 Running Reports Search for Vital Signs Reports Criteria, 5 days.",
+        "description": "",
+        "line": 58,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@BTRIS_Quick_Smoke_Test",
+            "line": 1
+          },
+          {
+            "name": "@ReferenceList_Radiology_QST",
+            "line": 2
+          },
+          {
+            "name": "@Vital_Signs-1",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1163980013
+            }
+          },
+          {
+            "output": [
+              "Executing Environment is : test01",
+              "inspect: #<Watir::Browser:0x..fd4964a43fcb04348 url=\"data:,\" title=\"\">",
+              "status : ",
+              "#<Watir::Browser:0x00000000012d1ee0>",
+              "The OS Platform is x86_64-linux"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 261767022
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:184"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155456
+            }
+          },
+          {
+            "output": [
+              "Started executing Scenario : 1.1 Running Reports Search for Vital Signs Reports Criteria, 5 days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179420
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the user navigates to / on browser",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Login to the system.",
+                "line": 9
+              }
+            ],
+            "match": {
+              "location": "features/support/page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 452839392
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Log in to BTRIS\" text in \"btris home: landing page\" field on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 447416261
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user login with \"btris_test2\" to the btris application",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Login to the BTRIS system.",
+                "line": 12
+              }
+            ],
+            "output": [
+              "The logged-in user name is btris_test2",
+              "the value or data you wish to remember is Log In",
+              "the value or data you wish to remember is User Name:"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1492"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2675296434
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"warning pop-up message\" field into \"Warning Header\" on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Verify the condition page to accespt it.",
+                "line": 14
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Conditions of Use and Code of Conduct"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 556446644
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Conditions of Use and Code of Conduct\" text in \"btris: accept page\" field on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175983989
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: accept button\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Click on the accept button.",
+                "line": 17
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270254626
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: active protocol button\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Verify and click on active protocol.",
+                "line": 19
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 322126647
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Verify and click on Reference List Report top na.",
+                "line": 21
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Reference List Reports"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380641307
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 243237897
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list reports: vital sign\" field into \"Criteria List\" on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#click on the Laboratory Test.",
+                "line": 24
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Vital Signs"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218159659
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list vital sign\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#click on the Vital Sign Test.",
+                "line": 26
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268029924
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Click on the create new report button.",
+                "line": 28
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297647475
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list vital signs report filter page\" field into \"Criteria Page\" on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#verify the select report page.",
+                "line": 30
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Vital Signs Criteria"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 568607844
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Vital Signs Criteria\" text in \"reference list vital signs report filter page\" field on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162745841
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Reference List DN\" from \"reference list drop down\" drop down on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 500213825
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"230\" into \"reference list day range text box\" on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 652354470
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"230\" into \"number of days after text box\" on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 654354435
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"5\" into \"number of values text box\" on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 687216965
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Vital Signs Template1\" from \"labs drop down\" drop down on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 535750396
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 361523506
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page",
+            "line": 58,
+            "output": [
+              "the value or data you wish to remember is 33"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6419903780
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Vital Signs Results Preview - Standard\" text in \"reference list: vital signs report results table\" field on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Verify report page.",
+                "line": 40
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239140553
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"vital sign rl results\" field into \"Loaded Vital Sign Reference List Report\" on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Verify and validate the Results.",
+                "line": 42
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222642320
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"download full report button\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#And the user verify the reference list vital sign report and \"<Validation Record>\" on the table",
+                "line": 44
+              },
+              {
+                "value": "#Click on the download report button.",
+                "line": 45
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 334602490
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"open results in new tab button\" element on \"Btris/Portal\" page",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#click on the open report in another tab button.",
+                "line": 47
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 370375200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the switch to new tab page",
+            "line": 58,
+            "match": {
+              "location": "features/support/page_steps.rb:114"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8477538
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"vital sign rl results\" field into \"Loaded Vital Sign Reference List Report\" on \"Btris/Portal\" page",
+            "line": 58,
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1687346386
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Vital Signs Results Preview - Standard\" text in \"reference list: vital signs report results table\" field on \"Btris/Portal\" page",
+            "line": 58,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207422156
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the return to main page",
+            "line": 58,
+            "match": {
+              "location": "features/support/page_steps.rb:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9450943
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user logged out of the system",
+            "line": 58,
+            "comments": [
+              {
+                "value": "#Sign out.",
+                "line": 53
+              }
+            ],
+            "output": [
+              "Test is not running in mobile emulator, Executing Environment is : test01"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1032"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653285220
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Finished executing Scenario : 1.1 Running Reports Search for Vital Signs Reports Criteria, 5 days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153555
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:193"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20085
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175633085
+            }
+          }
+        ]
+      },
+      {
+        "id": "btris-reference-list-test-report;1.2-running-reports-search-for-radiology-reports-criteria,-15-days.;;2",
+        "keyword": "Scenario Outline",
+        "name": "1.2 Running Reports Search for Radiology Reports Criteria, 15 days.",
+        "description": "",
+        "line": 112,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@BTRIS_Quick_Smoke_Test",
+            "line": 1
+          },
+          {
+            "name": "@ReferenceList_Radiology_QST",
+            "line": 2
+          },
+          {
+            "name": "@Radiology-2",
+            "line": 60
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1334691223
+            }
+          },
+          {
+            "output": [
+              "Executing Environment is : test01",
+              "inspect: #<Watir::Browser:0x..f9bd38c0270546d6 url=\"data:,\" title=\"\">",
+              "status : ",
+              "#<Watir::Browser:0x0000000003239e90>",
+              "The OS Platform is x86_64-linux"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249515962
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:184"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157633
+            }
+          },
+          {
+            "output": [
+              "Started executing Scenario : 1.2 Running Reports Search for Radiology Reports Criteria, 15 days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84920
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the user navigates to / on browser",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Login to the system.",
+                "line": 63
+              }
+            ],
+            "match": {
+              "location": "features/support/page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 419352481
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Log in to BTRIS\" text in \"btris home: landing page\" field on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442546274
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user login with \"btris_test2\" to the btris application",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Login to the BTRIS system.",
+                "line": 66
+              }
+            ],
+            "output": [
+              "The logged-in user name is btris_test2",
+              "the value or data you wish to remember is Log In",
+              "the value or data you wish to remember is User Name:"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1492"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2656586473
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"warning pop-up message\" field into \"Warning Header\" on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Verify the condition page to accespt it.",
+                "line": 68
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Conditions of Use and Code of Conduct"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 539308969
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Conditions of Use and Code of Conduct\" text in \"btris: accept page\" field on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158420921
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: accept button\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Click on the accept button.",
+                "line": 71
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 271526337
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: active protocol button\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Verify and click on active protocol.",
+                "line": 73
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311816432
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Verify and click on Reference List Report top na.",
+                "line": 75
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Reference List Reports"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 404747183
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 232047610
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list reports: radiology\" field into \"Criteria List\" on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#click on the Laboratory Test.",
+                "line": 78
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Radiology"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212382418
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list radiology\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#click on the Radiology Test.",
+                "line": 80
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 281049375
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Click on the create new report button.",
+                "line": 82
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 283633999
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list radiology report filter page\" field into \"Criteria Page\" on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#verify the select report page.",
+                "line": 84
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Radiology Criteria"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 593421756
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Radiology Criteria\" text in \"reference list radiology report filter page\" field on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173537484
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Reference List DN\" from \"reference list drop down\" drop down on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 568562742
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"300\" into \"reference list day range text box\" on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712956520
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"200\" into \"number of days after text box\" on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 673626800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"15\" into \"number of values text box\" on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 649918030
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Radiology Test Template\" from \"labs drop down\" drop down on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 540269541
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365565764
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page",
+            "line": 112,
+            "output": [
+              "the value or data you wish to remember is 34"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5787695145
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Radiology Results Preview - Standard\" text in \"reference list: radiology report results table\" field on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Verify report page.",
+                "line": 94
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236470309
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"radiology rl results\" field into \"Loaded Radiology Report\" on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Verify and validate the report display and click on the the image to view.",
+                "line": 96
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225889675
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"download full report button\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#And the user verify the reference list \"<Validation Record>\" radiology report on the table",
+                "line": 98
+              },
+              {
+                "value": "#Click on the download report button.",
+                "line": 99
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 341108791
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"open results in new tab button\" element on \"Btris/Portal\" page",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#click on the open report in another tab button.",
+                "line": 101
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332169594
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the switch to new tab page",
+            "line": 112,
+            "match": {
+              "location": "features/support/page_steps.rb:114"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8544729
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"radiology rl results\" field into \"Loaded Radiology Report\" on \"Btris/Portal\" page",
+            "line": 112,
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1234108236
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Radiology Results Preview - Standard\" text in \"reference list: radiology report results table\" field on \"Btris/Portal\" page",
+            "line": 112,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270705047
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the return to main page",
+            "line": 112,
+            "match": {
+              "location": "features/support/page_steps.rb:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9251332
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user logged out of the system",
+            "line": 112,
+            "comments": [
+              {
+                "value": "#Sign out.",
+                "line": 107
+              }
+            ],
+            "output": [
+              "Test is not running in mobile emulator, Executing Environment is : test01"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1032"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 599234800
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Finished executing Scenario : 1.2 Running Reports Search for Radiology Reports Criteria, 15 days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137066
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:193"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19272
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175254795
+            }
+          }
+        ]
+      },
+      {
+        "id": "btris-reference-list-test-report;1.2-running-reports-search-for-pathology-report-criteria,-15days.;;2",
+        "keyword": "Scenario Outline",
+        "name": "1.2 Running Reports Search for Pathology Report Criteria, 15days.",
+        "description": "",
+        "line": 167,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@BTRIS_Quick_Smoke_Test",
+            "line": 1
+          },
+          {
+            "name": "@ReferenceList_Radiology_QST",
+            "line": 2
+          },
+          {
+            "name": "@Pathology-3",
+            "line": 115
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1089625670
+            }
+          },
+          {
+            "output": [
+              "Executing Environment is : test01",
+              "inspect: #<Watir::Browser:0x4affedbe761720d0 url=\"data:,\" title=\"\">",
+              "status : ",
+              "#<Watir::Browser:0x0000000003550b60>",
+              "The OS Platform is x86_64-linux"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254441344
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:184"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203455
+            }
+          },
+          {
+            "output": [
+              "Started executing Scenario : 1.2 Running Reports Search for Pathology Report Criteria, 15days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85821
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the user navigates to / on browser",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Login to the system.",
+                "line": 118
+              }
+            ],
+            "match": {
+              "location": "features/support/page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 449669819
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Log in to BTRIS\" text in \"btris home: landing page\" field on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 419612574
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user login with \"btris_test2\" to the btris application",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Login to the BTRIS system.",
+                "line": 121
+              }
+            ],
+            "output": [
+              "The logged-in user name is btris_test2",
+              "the value or data you wish to remember is Log In",
+              "the value or data you wish to remember is User Name:"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1492"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2527246307
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"warning pop-up message\" field into \"Warning Header\" on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Verify the condition page to accespt it.",
+                "line": 123
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Conditions of Use and Code of Conduct"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 658795167
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Conditions of Use and Code of Conduct\" text in \"btris: accept page\" field on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172754560
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: accept button\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Click on the accept button.",
+                "line": 126
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 273526239
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: active protocol button\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Verify and click on active protocol.",
+                "line": 128
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311585756
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Verify and click on Reference List Report top na.",
+                "line": 130
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Reference List Reports"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 397534912
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227065978
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list reports: pathology\" field into \"Criteria List\" on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#click on the Laboratory Test.",
+                "line": 133
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Pathology"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225317323
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list pathology\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 281771730
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Click on the create new report button.",
+                "line": 136
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284036121
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list pathology report filter page\" field into \"Criteria Page\" on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#verify the select report page.",
+                "line": 138
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Pathology Criteria"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 587105007
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Pathology Criteria\" text in \"reference list pathology report filter page\" field on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159610998
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Reference List DN\" from \"reference list drop down\" drop down on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 502230061
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"290\" into \"reference list day range text box\" on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712706340
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"200\" into \"number of days after text box\" on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 644006804
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"15\" into \"number of values text box\" on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 693278495
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Pathology Document 1\" from \"labs drop down\" drop down on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 532568913
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"Bone Marrow Pathology\" field into \"Pathology Report\" on \"Btris/Portal\" page",
+            "line": 167,
+            "output": [
+              "the value or data you wish to remember is Bone Marrow Pathology\nRemove Bone Marrow Pathology"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292297507
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 296999902
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Verify report page.",
+                "line": 148
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is 34"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11127020867
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Pathology Results Preview - Standard\" text in \"pathology and procedure report page\" field on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219585676
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"pathology rl results\" field into \"Loaded Pathology Report\" on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Verify and validate the report display and click on the the image to view.",
+                "line": 151
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225933400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"download full report button\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#And the user verify the reference list pathology report and \"<Validation Record>\" on the table",
+                "line": 153
+              },
+              {
+                "value": "#Click on the download report button.",
+                "line": 154
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 339282690
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"open results in new tab button\" element on \"Btris/Portal\" page",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#click on the open report in another tab button.",
+                "line": 156
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 338469823
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the switch to new tab page",
+            "line": 167,
+            "match": {
+              "location": "features/support/page_steps.rb:114"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7798389
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"pathology rl results\" field into \"Loaded Pathology Report\" on \"Btris/Portal\" page",
+            "line": 167,
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB INPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1314011054
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Pathology Results Preview - Standard\" text in \"pathology and procedure report page\" field on \"Btris/Portal\" page",
+            "line": 167,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204291236
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the return to main page",
+            "line": 167,
+            "match": {
+              "location": "features/support/page_steps.rb:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8734508
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user logged out of the system",
+            "line": 167,
+            "comments": [
+              {
+                "value": "#Sign out.",
+                "line": 162
+              }
+            ],
+            "output": [
+              "Test is not running in mobile emulator, Executing Environment is : test01"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1032"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 589816226
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Finished executing Scenario : 1.2 Running Reports Search for Pathology Report Criteria, 15days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138161
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:193"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18922
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175462012
+            }
+          }
+        ]
+      },
+      {
+        "id": "btris-reference-list-test-report;1.2-running-reports-search-for-laboratory-reports-criteria,-10days.;;2",
+        "keyword": "Scenario Outline",
+        "name": "1.2 Running Reports Search for Laboratory Reports Criteria, 10days.",
+        "description": "",
+        "line": 221,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@BTRIS_Quick_Smoke_Test",
+            "line": 1
+          },
+          {
+            "name": "@ReferenceList_Radiology_QST",
+            "line": 2
+          },
+          {
+            "name": "@Laboratory-4",
+            "line": 170
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1113067993
+            }
+          },
+          {
+            "output": [
+              "Executing Environment is : test01",
+              "inspect: #<Watir::Browser:0x..fb25ac180503c98be url=\"data:,\" title=\"\">",
+              "status : ",
+              "#<Watir::Browser:0x00000000037b0860>",
+              "The OS Platform is x86_64-linux"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257188432
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:184"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92986
+            }
+          },
+          {
+            "output": [
+              "Started executing Scenario : 1.2 Running Reports Search for Laboratory Reports Criteria, 10days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183217
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the user navigates to / on browser",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Login to the system.",
+                "line": 173
+              }
+            ],
+            "match": {
+              "location": "features/support/page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 427241145
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Log in to BTRIS\" text in \"btris home: landing page\" field on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1469711273
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user login with \"btris_test2\" to the btris application",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Login to the BTRIS system.",
+                "line": 176
+              }
+            ],
+            "output": [
+              "The logged-in user name is btris_test2",
+              "the value or data you wish to remember is Log In",
+              "the value or data you wish to remember is User Name:"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1492"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2652160519
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"warning pop-up message\" field into \"Warning Header\" on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Verify the condition page to accespt it.",
+                "line": 178
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Conditions of Use and Code of Conduct"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563075754
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Conditions of Use and Code of Conduct\" text in \"btris: accept page\" field on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169587537
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: accept button\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Click on the accept button.",
+                "line": 181
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257966523
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: active protocol button\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Verify and click on active protocol.",
+                "line": 183
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 312830309
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list top nav\" field into \"Report Type\" on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Verify and click on Reference List Report top na.",
+                "line": 185
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Reference List Reports"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380733960
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list top nav\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234745619
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list reports: laboratory\" field into \"Criteria List\" on \"Btris/Portal\" page",
+            "line": 221,
+            "output": [
+              "the value or data you wish to remember is Laboratory"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228359897
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"reference list laboratory\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#click on the Laboratory Test.",
+                "line": 189
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 281315327
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: create new report button\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Click on the create new report button.",
+                "line": 191
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285983620
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reference list laboratory report filter page\" field into \"Search Report\" on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#verify the select report page.",
+                "line": 193
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is Laboratory Criteria"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 583710870
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Laboratory Criteria\" text in \"reference list laboratory report filter page\" field on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174559540
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Reference List DN\" from \"reference list drop down\" drop down on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562758044
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"200\" into \"reference list day range text box\" on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 683606417
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"200\" into \"number of days after text box\" on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 697295451
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user enters \"10\" into \"number of values text box\" on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/input_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 690150415
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user selects \"Laboratory Testing 01\" from \"labs drop down\" drop down on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/drop_down_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 542081393
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"btris: bottom select button\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344966054
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"reports results\" field into \"Loaded Report\" on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Verify report page.",
+                "line": 202
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is 55"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6787435497
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Laboratory Results Preview - Standard\" text in \"laboratory and procedure report page\" field on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 226229392
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"laboratory results\" field into \"Loaded Laboratory Report\" on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Verify and validate the report display and click on the the image to view.",
+                "line": 205
+              }
+            ],
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB OUTPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236776279
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"download full report button\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#And the user verify the reference list \"<Validation Record>\" laboratory report on the table",
+                "line": 207
+              },
+              {
+                "value": "#Click on the download report button.",
+                "line": 208
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 347251866
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user clicks on \"open results in new tab button\" element on \"Btris/Portal\" page",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#click on the open report in another tab button.",
+                "line": 210
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 388053861
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the switch to new tab page",
+            "line": 221,
+            "match": {
+              "location": "features/support/page_steps.rb:114"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9238201
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user remembers the value of \"laboratory results\" field into \"Loaded Laboratory Report\" on \"Btris/Portal\" page",
+            "line": 221,
+            "output": [
+              "the value or data you wish to remember is NIHCCTEST, PATIENT LAB OUTPAT DLM USE ONLY"
+            ],
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1905492132
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user must see \"Laboratory Results Preview - Standard\" text in \"laboratory report page\" field on \"Btris/Portal\" page",
+            "line": 221,
+            "match": {
+              "location": "features/step_definitions/global_elements_steps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 197028848
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the return to main page",
+            "line": 221,
+            "match": {
+              "location": "features/support/page_steps.rb:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9036205
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the user logged out of the system",
+            "line": 221,
+            "comments": [
+              {
+                "value": "#Sign out.",
+                "line": 216
+              }
+            ],
+            "output": [
+              "Test is not running in mobile emulator, Executing Environment is : test01"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1032"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 589392398
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Finished executing Scenario : 1.2 Running Reports Search for Laboratory Reports Criteria, 10days., Examples (#1)"
+            ],
+            "match": {
+              "location": "features/support/support.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230292
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:193"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34139
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175058331
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

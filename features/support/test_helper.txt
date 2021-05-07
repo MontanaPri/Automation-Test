@@ -1,0 +1,19 @@
+====>>>>Executing Commands For Running Test Locally On git-batch========>>>>>>
+
+#Run on git-bash (From Montana's Computer).
+-Run With Test Protocol For regression in test ENV:
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test01 browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+-Run With Non-Test Protocols:
+bundle exec cucumber -c --tags @BTRIS_Quick_Prod_Test test_env=test01 browser=chrome --format progress --format html --out=C:/NewRubyFramework/btris_automation_regression_suite/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+
+#Run on git-bash (From Sandeep's Computer).
+-Run With Test Protocol For Regression in test ENV:
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=test01 browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Regression_Test_Report.html
+-Run With Non-Test Protocols:
+bundle exec cucumber -c --tags @BTRIS_Quick_Prod_Test test_env=test01 browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Regression_TestProtocol_Report.html
+-Run quick smoke test.
+bundle exec cucumber -c --tags @BTRIS_Quick_Smoke_Test test_env=test01 browser=chrome --format progress --format html --out=C:/BTRIS_AUTOMATION/BTRIS-Automation-Test/features/support/BTRIS_REPORTS/BTRIS_Regression_TestProtocol_Report.html
+
+@BTRIS_Quick_Smoke_Test
+#Run on Linux in Prod.
+bundle exec cucumber -c --tags @BTRIS_Quick_Test test_env=Prod browser=chrome --format progress --format html --out=/btris_automation_regression_suite/features/support/BTRIS_Test_Reports/BTRIS_Quick_Test_Report.html
