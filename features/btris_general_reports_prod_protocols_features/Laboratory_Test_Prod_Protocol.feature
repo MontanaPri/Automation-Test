@@ -1,4 +1,4 @@
-@BTRIS_Quick_Prod_Test
+@BTRIS_Quick_Prod_Test_Unstable
 @Laboratory_Test_Prod_Data
 Feature: BTRIS Laboratory Feature Prod Data
 
